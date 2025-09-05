@@ -347,7 +347,7 @@ const App = ({ config, settings, startupWarnings = [], version }: AppProps) => {
   useEffect(() => {
     // Only sync when not currently authenticating
     if (authState === AuthState.Authenticated) {
-      setUserTier(config.getGeminiClient()?.getUserTier());
+      setUserTier(config.getUserTier());
     }
   }, [config, authState]);
 

@@ -49,6 +49,7 @@ export function createMockConfig(
     getHistory: vi.fn().mockReturnValue([]),
     getEmbeddingModel: vi.fn().mockReturnValue('text-embedding-004'),
     getSessionId: vi.fn().mockReturnValue('test-session-id'),
+    getUserTier: vi.fn(),
     ...overrides,
   };
   return mockConfig;
