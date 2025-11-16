@@ -66,4 +66,11 @@ export enum ToolErrorType {
 
   // WebSearch-specific Errors
   WEB_SEARCH_FAILED = 'web_search_failed',
+
+  // File Upload/Download Errors
+  FILE_UPLOAD_FAILURE = 'file_upload_failure',
+  FILE_DOWNLOAD_FAILURE = 'file_download_failure',
+  FILE_LIST_FAILURE = 'file_list_failure',
+  UPLOAD_NOT_SUPPORTED = 'upload_not_supported',
+  DOWNLOAD_NOT_SUPPORTED = 'download_not_supported',
 }
