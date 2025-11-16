@@ -188,7 +188,7 @@ export class UploadFileTool extends BaseDeclarativeTool<
       if (!stats.isFile()) {
         return `Path is not a file: ${filePath}`;
       }
-    } catch (error) {
+    } catch (_error) {
       return `File does not exist or cannot be accessed: ${filePath}`;
     }
 
