@@ -185,7 +185,7 @@ export class DownloadFileTool extends BaseDeclarativeTool<
       if (!stats.isDirectory()) {
         return `Parent path is not a directory: ${parentDir}`;
       }
-    } catch (error) {
+    } catch (_error) {
       return `Parent directory does not exist or cannot be accessed: ${parentDir}`;
     }
 
